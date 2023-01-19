@@ -1,63 +1,26 @@
 import { Component } from '@angular/core';
+import { SidebarService } from 'src/app/services/sidebar.service';
+import { SideBarProperties } from 'src/app/SideBarProperties';
 
 @Component({
-  selector: 'app-sidebar-properties',
-  templateUrl: './sidebar-properties.component.html',
-  styleUrls: ['./sidebar-properties.component.css'],
+	selector: 'app-sidebar-properties',
+	templateUrl: './sidebar-properties.component.html',
+	styleUrls: ['./sidebar-properties.component.css'],
 })
 export class SidebarPropertiesComponent {
-  sideBarProperties = [
-    {
-      id: 1,
-      region: 'ABILENE, TX',
-      property: 'Sedona Apartments',
-    },
-    {
-      id: 2,
-      region: 'ALBANY, GA',
-      property: 'Friar Tuck',
-    },
-    {
-      id: 3,
-      region: 'ALBUQUERQUE, NM',
-      property: 'Ario Apartments',
-    },
-    {
-      id: 4,
-      region: 'ANN, ARBOR, MI',
-      property: 'Casa Tierra',
-    },
-    {
-      id: 5,
-      region: 'ASHEVILLE, VC',
-      property: 'Burton Hills',
-    },
-    {
-      id: 6,
-      region: 'ATHENS, GA',
-      property: 'The cottages at Lexington',
-    },
-    {
-      id: 7,
-      region: 'ATLANTA, GA',
-      property: '17th Street Lofts',
-    },
-    {
-      id: 8,
-      region: 'AUGUSTA, GA',
-      property: 'Village Square at Olde Town',
-    },
-    {
-      id: 9,
-      region: 'AUSTIN, TX',
-      property: '44 South',
-    },
-    {
-      id: 10,
-      region: 'BALTIMORE, MD',
-      property: '1305 Dock Street',
-    },
-  ];
+	sideBarProperties: SideBarProperties[] = [];
 
-  // define a action event whenever you click a button to show its department
+	constructor(private sideBarService: SidebarService) {}
+	ngOnInit() {
+		this.sideBarService
+			.getSideBarProperties()
+			.subscribe(
+				(properties: SideBarProperties[]) =>
+					(this.sideBarProperties = properties as SideBarProperties[])
+			);
+		// console.log(this.sideBarProperties); // if you print it here the array will be empty
+	}
+	// TODO:
+	// define a action event whenever you click a button to show its department
+	// An Output event emitter in the sidebar-item then implement the emitter here
 }

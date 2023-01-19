@@ -1,0 +1,107 @@
+{
+	"SideBarProperties": [
+		{
+			"id": 1,
+			"region": "ABILENE, TX",
+			"property": ["Sedona Apartments"]
+		},
+		{
+			"id": 2,
+			"region": "ALBANY, GA",
+			"property": ["Friar Tuck"]
+		},
+		{
+			"id": 3,
+			"region": "ALBUQUERQUE, NM",
+			"property": ["Ario Apartments"]
+		},
+		{
+			"id": 4,
+			"region": "ANN, ARBOR, MI",
+			"property": ["Casa Tierra"]
+		},
+		{
+			"id": 5,
+			"region": "ASHEVILLE, VC",
+			"property": ["Burton Hills"]
+		},
+		{
+			"id": 6,
+			"region": "ATHENS, GA",
+			"property": ["The cottages at Lexington"]
+		},
+		{
+			"id": 7,
+			"region": "ATLANTA, GA",
+			"property": ["17th Street Lofts"]
+		},
+		{
+			"id": 8,
+			"region": "AUGUSTA, GA",
+			"propertyPercentagePrice": ["Village Square at Olde Town"]
+		},
+
+		{
+			"id": 9,
+			"region": "AUSTIN, TX",
+			"property": ["44 South"]
+		},
+
+		{
+			"id": 10,
+			"region": "BALTIMORE, MD",
+			"property": ["1305 Dock Street"]
+		}
+	],
+
+	"SnapshotData": [
+		{
+			"id": "1",
+			"attribute": "NER",
+			"propertiesPrice": "2.43$",
+			"competitorsPercentage": "80%"
+		},
+		{
+			"id": "2",
+			"attribute": "NER/SQFT",
+			"propertiesPrice": "3.43$",
+			"competitorsPercentage": "81%"
+		},
+		{
+			"id": "3",
+			"attribute": "CONCESSIONS",
+			"propertiesPrice": "2.99",
+			"competitorsPercentage": "82%"
+		},
+		{
+			"id": "4",
+			"attribute": "OCCUPANCY %",
+			"propertiesPrice": "0.11",
+			"competitorsPercentage": "54%"
+		},
+		{
+			"id": "5",
+			"attribute": "LEASED %",
+			"propertiesPrice": "1.75",
+			"competitorsPercentage": "85%"
+		},
+		{
+			"id": "6",
+			"attribute": "ATR %",
+			"propertiesPrice": "3.43",
+			"competitorsPercentage": "83%"
+		},
+		{
+			"id": "7",
+			"attribute": "TRAFFIC/WEEK",
+			"propertiesPrice": "1.23",
+			"competitorsPercentage": "78%"
+		},
+		{
+			"id": 8,
+			"attribute": "LEASES/WEEK",
+			"propertiesPrice": "5.43",
+			"competitorsPercentage": "76%"
+		}
+	]
+}

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -18,26 +19,26 @@ import { PortfolioSnapshotResearchComponent } from './components/main-content/po
 import { PortfolioSnapshotReviewComponent } from './components/main-content/portfolio/portfolio-snapshot/portfolio-snapshot-review/portfolio-snapshot-review.component';
 import { PortfolioSnapshotTableComponent } from './components/main-content/portfolio/portfolio-snapshot/portfolio-snapshot-table/portfolio-snapshot-table.component';
 @NgModule({
-  declarations: [
-    AppComponent,
-    SidebarComponent,
-    HeaderComponent,
-    MainContentComponent,
-    PortfolioComponent,
-    PortfolioSnapshotComponent,
-    PortfolioTrendsComponent,
-    PortfoliSnapshotDetailsComponent,
-    HeaderLogoComponent,
-    HeaderRightNavBarComponent,
-    SidebarHeaderComponent,
-    SidebarPropertiesComponent,
-    PortfolioHeaderComponent,
-    PortfolioSnapshotResearchComponent,
-    PortfolioSnapshotReviewComponent,
-    PortfolioSnapshotTableComponent,
-  ],
-  imports: [BrowserModule],
-  providers: [],
-  bootstrap: [AppComponent],
+	declarations: [
+		AppComponent,
+		SidebarComponent,
+		HeaderComponent,
+		MainContentComponent,
+		PortfolioComponent,
+		PortfolioSnapshotComponent,
+		PortfolioTrendsComponent,
+		PortfoliSnapshotDetailsComponent,
+		HeaderLogoComponent,
+		HeaderRightNavBarComponent,
+		SidebarHeaderComponent,
+		SidebarPropertiesComponent,
+		PortfolioHeaderComponent,
+		PortfolioSnapshotResearchComponent,
+		PortfolioSnapshotReviewComponent,
+		PortfolioSnapshotTableComponent,
+	],
+	imports: [BrowserModule, HttpClientModule],
+	providers: [],
+	bootstrap: [AppComponent],
 })
 export class AppModule {}

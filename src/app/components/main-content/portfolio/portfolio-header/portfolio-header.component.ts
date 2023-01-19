@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio-header.component.css']
 })
 export class PortfolioHeaderComponent {
-
+  
 }

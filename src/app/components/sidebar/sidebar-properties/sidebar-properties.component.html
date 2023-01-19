@@ -8,7 +8,9 @@
             </button>
 
             <ul class="dropdown-menu">
-                <li style="font-size: 14px;"><a href="#" style="font-size: 14px; color: white"> {{ property.property}}
+                <li style="font-size: 14px;"><a href="#" style="font-size: 14px; color: white"
+                        *ngFor="let property of property.properties">
+                        {{ property }}
                     </a></li>
             </ul>
         </div>
