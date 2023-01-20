@@ -17,8 +17,6 @@ export class SnapshotService {
 	constructor(private http: HttpClient) {}
 
 	getSnapShotTableData(): Observable<SnapshotTableData[]> {
-		const test = this.http.get<SnapshotTableData[]>(this.apiUrl);
-		test.forEach(value => console.log(value));
-		return test;
+		return this.http.get<SnapshotTableData[]>(this.apiUrl);
 	}
 }

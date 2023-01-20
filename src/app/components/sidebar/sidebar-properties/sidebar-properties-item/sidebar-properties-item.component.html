@@ -1,0 +1,16 @@
+<div class="regions">
+    <div class="dropdown">
+        <button class="dropdown-toggle" type="button" data-toggle="abilene-tx" id="#" (click)="onClick(property)">
+            <div class="region-title">
+                <div class="sidebar-region-name">{{property.region}}</div>
+            </div>
+        </button>
+
+        <ul class="dropdown-menu">
+            <li style=" font-size: 14px;"><a href="#" style="font-size: 14px; color: white"
+                    *ngFor="let p of property.properties">
+                    {{ p }}
+                </a></li>
+        </ul>
+    </div>
+</div>

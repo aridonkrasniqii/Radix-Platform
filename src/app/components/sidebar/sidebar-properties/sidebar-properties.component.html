@@ -1,18 +1,4 @@
-<div *ngFor="let property of sideBarProperties">
-    <div class='regions'>
-        <div class="dropdown">
-            <button class="dropdown-toggle" type="button" data-toggle="abilene-tx" id="#">
-                <div class="region-title">
-                    <div class="sidebar-region-name">{{property.region}}</div>
-                </div>
-            </button>
+<app-sidebar-properties-item *ngFor="let property of sideBarProperties" [property]="property"
+    (onRegClick)="onRegionClick(property)">
 
-            <ul class="dropdown-menu">
-                <li style="font-size: 14px;"><a href="#" style="font-size: 14px; color: white"
-                        *ngFor="let property of property.properties">
-                        {{ property }}
-                    </a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+</app-sidebar-properties-item>

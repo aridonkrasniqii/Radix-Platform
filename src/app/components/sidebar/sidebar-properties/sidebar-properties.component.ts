@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SidebarService } from 'src/app/services/sidebar.service';
 import { SideBarProperties } from 'src/app/SideBarProperties';
+import { SidebarPropertiesItemComponent } from './sidebar-properties-item/sidebar-properties-item.component';
 
 @Component({
 	selector: 'app-sidebar-properties',
@@ -9,7 +10,7 @@ import { SideBarProperties } from 'src/app/SideBarProperties';
 })
 export class SidebarPropertiesComponent {
 	sideBarProperties: SideBarProperties[] = [];
-
+	toggle = false;
 	constructor(private sideBarService: SidebarService) {}
 	ngOnInit() {
 		this.sideBarService
@@ -18,9 +19,9 @@ export class SidebarPropertiesComponent {
 				(properties: SideBarProperties[]) =>
 					(this.sideBarProperties = properties as SideBarProperties[])
 			);
-		// console.log(this.sideBarProperties); // if you print it here the array will be empty
 	}
-	// TODO:
-	// define a action event whenever you click a button to show its department
-	// An Output event emitter in the sidebar-item then implement the emitter here
+
+	onRegionClick(property: any) {
+		console.log(property);
+	}
 }

@@ -58,50 +58,50 @@
 		{
 			"id": "1",
 			"attribute": "NER",
-			"propertiesPrice": "2.43$",
-			"competitorsPercentage": "80%"
+			"propertiesPrice": "2.43",
+			"competitorsPercentage": "80"
 		},
 		{
 			"id": "2",
 			"attribute": "NER/SQFT",
-			"propertiesPrice": "3.43$",
-			"competitorsPercentage": "81%"
+			"propertiesPrice": "3.43",
+			"competitorsPercentage": "81"
 		},
 		{
 			"id": "3",
 			"attribute": "CONCESSIONS",
 			"propertiesPrice": "2.99",
-			"competitorsPercentage": "82%"
+			"competitorsPercentage": "82"
 		},
 		{
 			"id": "4",
 			"attribute": "OCCUPANCY %",
 			"propertiesPrice": "0.11",
-			"competitorsPercentage": "54%"
+			"competitorsPercentage": "54"
 		},
 		{
 			"id": "5",
 			"attribute": "LEASED %",
 			"propertiesPrice": "1.75",
-			"competitorsPercentage": "85%"
+			"competitorsPercentage": "85"
 		},
 		{
 			"id": "6",
 			"attribute": "ATR %",
 			"propertiesPrice": "3.43",
-			"competitorsPercentage": "83%"
+			"competitorsPercentage": "83"
 		},
 		{
 			"id": "7",
 			"attribute": "TRAFFIC/WEEK",
 			"propertiesPrice": "1.23",
-			"competitorsPercentage": "78%"
+			"competitorsPercentage": "78"
 		},
 		{
 			"id": 8,
 			"attribute": "LEASES/WEEK",
 			"propertiesPrice": "5.43",
-			"competitorsPercentage": "76%"
+			"competitorsPercentage": "76"
 		}
 	]
 }
