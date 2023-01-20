@@ -1,10 +1,10 @@
 .logo-container {
-  padding: 5px 0 0 20px;
+	padding: 5px 0 0 20px;
 }
 .logo-title {
-  color: red;
-  font-weight: 1000;
+	color: red;
+	font-weight: 1000;
 }
 #radix-logo {
-  width: 60%;
+	width: 60%;
 }

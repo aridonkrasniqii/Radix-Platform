@@ -1,68 +1,68 @@
 .nav-bar-platform-products {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5px;
-  height: 65px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px;
+	height: 65px;
 }
 .nav-bar-ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  position: relative;
-  top: 12px;
-  margin-right: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	position: relative;
+	top: 12px;
+	margin-right: 30px;
 }
 .nav-bar-li:hover {
-  border-bottom: 4px solid rgb(26, 223, 26);
-  font-weight: bold;
+	border-bottom: 4px solid rgb(26, 223, 26);
+	font-weight: bold;
 }
 
 .nav-bar-li {
-  text-decoration: none;
-  padding: 0 5px;
-  margin: 2px;
-  list-style-type: none;
-  font-size: 14px;
-  height: 40px;
+	text-decoration: none;
+	padding: 0 5px;
+	margin: 2px;
+	list-style-type: none;
+	font-size: 14px;
+	height: 40px;
 }
 .nav-bar-li > a {
-  text-decoration: none;
-  color: black;
-  font-size: 15px;
-  font-weight: 595;
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-weight: 595;
 }
 .nav-bar-search {
-  font-size: 17px;
-  padding: 3px;
-  font-weight: bold;
-  color: #8093ae;
-  margin-bottom: 3px;
-  margin: 0 10px;
+	font-size: 17px;
+	padding: 3px;
+	font-weight: bold;
+	color: #8093ae;
+	margin-bottom: 3px;
+	margin: 0 10px;
 }
 
 .nav-bar-search::placeholder {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 
 .nav-bar-user-container {
-  border-left: 1px solid black;
-  height: 65px;
-  display: flex;
-  align-items: center;
-  width: 110px;
+	border-left: 1px solid black;
+	height: 65px;
+	display: flex;
+	align-items: center;
+	width: 110px;
 }
 #user-select-option {
-  border: none;
-  height: 65px;
-  width: 100px;
-  font-size: 16px;
-  padding: 10px;
-  background-color: white;
+	border: none;
+	height: 65px;
+	width: 100px;
+	font-size: 16px;
+	padding: 10px;
+	background-color: white;
 }
 
 .right-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }

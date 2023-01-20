@@ -1,4 +1,15 @@
-<app-sidebar-properties-item *ngFor="let property of sideBarProperties" [property]="property"
-    (onRegClick)="onRegionClick(property)">
+<div class="container">
 
-</app-sidebar-properties-item>
+
+
+    <app-sidebar-properties-item *ngFor="let property of sideBarProperties" [property]="property"
+        (onRegClick)="onRegionClick(property)" (onHoverProperty)="showToolTip(property)"
+        (onLeaveProperty)="hideToolTip(property)">
+
+    </app-sidebar-properties-item>
+
+    <app-sidebar-properties-tooltip *ngFor="let tooltip of toolTip; let i = index;" [tooltip]="tooltip"
+        [ngClass]="{'hidden': hidden}">
+        {{ 'arion'}};
+    </app-sidebar-properties-tooltip>
+</div>

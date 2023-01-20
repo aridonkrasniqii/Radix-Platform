@@ -5,11 +5,17 @@
             <th>Your Properties</th>
             <th>Competitors</th>
         </thead>
-        <tr class="snapshot-table-row" *ngFor="let data of tableData">
+        <tr class="snapshot-table-row" *ngFor="let data of tableData" (click)="onClick(data)">
             <td class="td">{{data.attribute}}</td>
             <td class="td"> {{data.propertiesPrice}}$</td>
             <td class="td">{{ data.competitorsPercentage}}%</td>
         </tr>
+
+
+
+
+
+
         <!-- <tr class="snapshot-table-row">
             <td class="td">NER/SQFT</td>
             <td>$2.43</td>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SidebarService } from 'src/app/services/sidebar.service';
 import { SideBarProperties } from 'src/app/SideBarProperties';
-import { SidebarPropertiesItemComponent } from './sidebar-properties-item/sidebar-properties-item.component';
+import { ToolTipProperties } from 'src/app/ToolTipProperties';
 
 @Component({
 	selector: 'app-sidebar-properties',
@@ -9,9 +9,15 @@ import { SidebarPropertiesItemComponent } from './sidebar-properties-item/sideba
 	styleUrls: ['./sidebar-properties.component.css'],
 })
 export class SidebarPropertiesComponent {
+	hidden = true;
 	sideBarProperties: SideBarProperties[] = [];
-	toggle = false;
-	constructor(private sideBarService: SidebarService) {}
+	toolTipProperties: ToolTipProperties[] = [];
+	toolTip: ToolTipProperties[] = [];
+	toolTipIndex = 0;
+	constructor(
+		private sideBarService: SidebarService,
+		private toolTipService: SidebarService
+	) {}
 	ngOnInit() {
 		this.sideBarService
 			.getSideBarProperties()
@@ -19,9 +25,21 @@ export class SidebarPropertiesComponent {
 				(properties: SideBarProperties[]) =>
 					(this.sideBarProperties = properties as SideBarProperties[])
 			);
+		this.toolTipService
+			.getToolTipProperties()
+			.subscribe((properties: ToolTipProperties[]) => {
+				this.toolTipProperties = properties as ToolTipProperties[];
+			});
 	}
 
-	onRegionClick(property: any) {
-		console.log(property);
+	onRegionClick(property: any) {}
+
+	showToolTip(property: any) {
+		this.toolTip = [this.toolTipProperties[property.id - 1]];
+		this.hidden = false;
+	}
+
+	hideToolTip(property: any) {
+		this.hidden = true;
 	}
 }

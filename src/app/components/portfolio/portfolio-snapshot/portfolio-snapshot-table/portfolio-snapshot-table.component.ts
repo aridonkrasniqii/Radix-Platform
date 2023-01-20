@@ -18,4 +18,10 @@ export class PortfolioSnapshotTableComponent {
 				this.tableData = tableData as SnapshotTableData[];
 			});
 	}
+
+	onClick(data: any) {
+		console.log(data);
+	}
+
+	
 }

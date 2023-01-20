@@ -19,6 +19,7 @@ import { PortfolioSnapshotReviewComponent } from './components/portfolio/portfol
 import { PortfolioSnapshotTableComponent } from './components/portfolio/portfolio-snapshot/portfolio-snapshot-table/portfolio-snapshot-table.component';
 import { SidebarPropertiesItemComponent } from './components/sidebar/sidebar-properties/sidebar-properties-item/sidebar-properties-item.component';
 import { SnapshotTableItemComponent } from './components/portfolio/portfolio-snapshot/portfolio-snapshot-table/snapshot-table-item/snapshot-table-item.component';
+import { SidebarPropertiesTooltipComponent } from './components/sidebar/sidebar-properties/sidebar-properties-tooltip/sidebar-properties-tooltip.component';
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -38,6 +39,7 @@ import { SnapshotTableItemComponent } from './components/portfolio/portfolio-sna
 		PortfolioSnapshotTableComponent,
 		SidebarPropertiesItemComponent,
 		SnapshotTableItemComponent,
+  SidebarPropertiesTooltipComponent,
 	],
 	imports: [BrowserModule, HttpClientModule],
 	providers: [],

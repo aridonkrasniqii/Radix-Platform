@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class PortfolioSnapshotReviewComponent {
   propertyImageUrl = '../../../../assets/images/property-images/property';
-  chartImageUrl = '../../../../assets/images/charts/chart'
+  chartImageUrl = '../../../../assets/images/charts/chart'; 
+
+
+
+
+  
 }
