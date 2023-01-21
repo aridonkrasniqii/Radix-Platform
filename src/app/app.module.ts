@@ -20,6 +20,7 @@ import { PortfolioSnapshotTableComponent } from './components/portfolio/portfoli
 import { SidebarPropertiesItemComponent } from './components/sidebar/sidebar-properties/sidebar-properties-item/sidebar-properties-item.component';
 import { SnapshotTableItemComponent } from './components/portfolio/portfolio-snapshot/portfolio-snapshot-table/snapshot-table-item/snapshot-table-item.component';
 import { SidebarPropertiesTooltipComponent } from './components/sidebar/sidebar-properties/sidebar-properties-tooltip/sidebar-properties-tooltip.component';
+import { PortfolioStateService } from './services/state/portfolio-state.service';
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -39,10 +40,10 @@ import { SidebarPropertiesTooltipComponent } from './components/sidebar/sidebar-
 		PortfolioSnapshotTableComponent,
 		SidebarPropertiesItemComponent,
 		SnapshotTableItemComponent,
-  SidebarPropertiesTooltipComponent,
+		SidebarPropertiesTooltipComponent,
 	],
 	imports: [BrowserModule, HttpClientModule],
-	providers: [],
+	providers: [PortfolioStateService],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}

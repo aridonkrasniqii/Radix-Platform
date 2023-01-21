@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SnapshotService } from 'src/app/services/snapshot.service';
 import { SnapshotTableData } from 'src/app/SnapshotTableData';
-
+import { PortfolioStateService } from 'src/app/services/state/portfolio-state.service';
 @Component({
 	selector: 'app-portfolio-snapshot-table',
 	templateUrl: './portfolio-snapshot-table.component.html',
@@ -9,7 +9,10 @@ import { SnapshotTableData } from 'src/app/SnapshotTableData';
 })
 export class PortfolioSnapshotTableComponent {
 	tableData: SnapshotTableData[] = [];
-	constructor(private snapshotService: SnapshotService) {}
+	constructor(
+		private snapshotService: SnapshotService,
+		private stateService: PortfolioStateService
+	) {}
 
 	ngOnInit() {
 		this.snapshotService
@@ -20,8 +23,6 @@ export class PortfolioSnapshotTableComponent {
 	}
 
 	onClick(data: any) {
-		console.log(data);
+		this.stateService.sendPropertyToReview(data.id);
 	}
-
-	
 }

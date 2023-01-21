@@ -8,8 +8,7 @@
 
     </app-sidebar-properties-item>
 
-    <app-sidebar-properties-tooltip *ngFor="let tooltip of toolTip; let i = index;" [tooltip]="tooltip"
+    <app-sidebar-properties-tooltip *ngFor="let tooltip of shownToolTip;" [tooltip]="tooltip"
         [ngClass]="{'hidden': hidden}">
-        {{ 'arion'}};
     </app-sidebar-properties-tooltip>
 </div>

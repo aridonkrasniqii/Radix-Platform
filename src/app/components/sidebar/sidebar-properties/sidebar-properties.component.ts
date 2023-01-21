@@ -12,7 +12,7 @@ export class SidebarPropertiesComponent {
 	hidden = true;
 	sideBarProperties: SideBarProperties[] = [];
 	toolTipProperties: ToolTipProperties[] = [];
-	toolTip: ToolTipProperties[] = [];
+	shownToolTip: ToolTipProperties[] = [];
 	toolTipIndex = 0;
 	constructor(
 		private sideBarService: SidebarService,
@@ -35,7 +35,7 @@ export class SidebarPropertiesComponent {
 	onRegionClick(property: any) {}
 
 	showToolTip(property: any) {
-		this.toolTip = [this.toolTipProperties[property.id - 1]];
+		this.shownToolTip = [this.toolTipProperties[property.id - 1]];
 		this.hidden = false;
 	}
 

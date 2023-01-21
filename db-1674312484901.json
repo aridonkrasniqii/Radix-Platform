@@ -1,0 +1,266 @@
+{
+  "SideBarProperties": [
+    {
+      "id": 1,
+      "region": "ABILENE, TX",
+      "property": [
+        "Sedona Apartments"
+      ]
+    },
+    {
+      "id": 2,
+      "region": "ALBANY, GA",
+      "property": [
+        "Friar Tuck"
+      ]
+    },
+    {
+      "id": 3,
+      "region": "ALBUQUERQUE, NM",
+      "property": [
+        "Ario Apartments"
+      ]
+    },
+    {
+      "id": 4,
+      "region": "ANN, ARBOR, MI",
+      "property": [
+        "Casa Tierra"
+      ]
+    },
+    {
+      "id": 5,
+      "region": "ASHEVILLE, VC",
+      "property": [
+        "Burton Hills"
+      ]
+    },
+    {
+      "id": 6,
+      "region": "ATHENS, GA",
+      "property": [
+        "The cottages at Lexington"
+      ]
+    },
+    {
+      "id": 7,
+      "region": "ATLANTA, GA",
+      "property": [
+        "17th Street Lofts"
+      ]
+    },
+    {
+      "id": 8,
+      "region": "AUGUSTA, GA",
+      "propertyPercentagePrice": [
+        "Village Square at Olde Town"
+      ]
+    },
+    {
+      "id": 9,
+      "region": "AUSTIN, TX",
+      "property": [
+        "44 South"
+      ]
+    },
+    {
+      "id": 10,
+      "region": "BALTIMORE, MD",
+      "property": [
+        "1305 Dock Street"
+      ]
+    }
+  ],
+  "SnapshotData": [
+    {
+      "id": "1",
+      "attribute": "NER",
+      "propertiesPrice": "2.43",
+      "competitorsPercentage": "80"
+    },
+    {
+      "id": "2",
+      "attribute": "NER/SQFT",
+      "propertiesPrice": "3.43",
+      "competitorsPercentage": "81"
+    },
+    {
+      "id": "3",
+      "attribute": "CONCESSIONS",
+      "propertiesPrice": "2.99",
+      "competitorsPercentage": "82"
+    },
+    {
+      "id": "4",
+      "attribute": "OCCUPANCY %",
+      "propertiesPrice": "0.11",
+      "competitorsPercentage": "54"
+    },
+    {
+      "id": "5",
+      "attribute": "LEASED %",
+      "propertiesPrice": "1.75",
+      "competitorsPercentage": "85"
+    },
+    {
+      "id": "6",
+      "attribute": "ATR %",
+      "propertiesPrice": "3.43",
+      "competitorsPercentage": "83"
+    },
+    {
+      "id": "7",
+      "attribute": "TRAFFIC/WEEK",
+      "propertiesPrice": "1.23",
+      "competitorsPercentage": "78"
+    },
+    {
+      "id": 8,
+      "attribute": "LEASES/WEEK",
+      "propertiesPrice": "5.43",
+      "competitorsPercentage": "76"
+    }
+  ],
+  "ToolTipProperties": [
+    {
+      "id": 1,
+      "name": "SEDONA APARTMENTS",
+      "days": "3 days ago",
+      "location": "2601 Nonesuch Road, Abilene, TX",
+      "phone": "234-233=1231",
+      "email": "email",
+      "units": "498 units"
+    },
+    {
+      "id": 2,
+      "name": "FIAR TUCK",
+      "days": "9 days",
+      "location": "2215 Friar Tuck Lane, Albany, GA",
+      "phone": "phone",
+      "email": "email",
+      "units": "44 units"
+    },
+    {
+      "id": 3,
+      "name": "CASA TIERRA",
+      "days": "7 days",
+      "location": "1780 Broadway Street, Ann Arbor, MI",
+      "phone": "phone",
+      "email": "email",
+      "units": "44 units"
+    },
+    {
+      "id": 4,
+      "name": "CASA TIERRA",
+      "days": "4 days",
+      "location": "265 Communication Way, Barnstable, MA",
+      "phone": "phone",
+      "email": "email",
+      "units": "44 units"
+    },
+    {
+      "id": 5,
+      "name": "BURTON HILLS",
+      "days": "6 days",
+      "location": "8008 Bluebonnet Boulevard, Baton Rouge, LA",
+      "phone": "phone",
+      "email": "email",
+      "units": "44 units"
+    },
+    {
+      "id": 6,
+      "name": "THE COTTAGES AT LEXINGTON",
+      "days": "8 days",
+      "location": "150 Summit Boulevard, Birmingham, A",
+      "phone": "phone",
+      "email": "email",
+      "units": "44 units"
+    },
+    {
+      "id": 7,
+      "name": "17TH STREET LOFTS",
+      "days": "9 days",
+      "location": "2188 Cloudy Peak Lane Northwest, Silverdale,",
+      "phone": "phone",
+      "email": "email",
+      "units": "44 units"
+    },
+    {
+      "id": 8,
+      "name": "VILLAGE SQUARE AT OLDE TOWN ",
+      "days": "4 days",
+      "location": "902 South Palm Court Drive, Harlingen, TX",
+      "phone": "phone",
+      "email": "email",
+      "units": "44 units"
+    },
+    {
+      "id": 9,
+      "name": "44 SOUTH",
+      "days": "2 days",
+      "location": "2215 Friar Tuck Lane, Albany, GA",
+      "phone": "phone",
+      "email": "email",
+      "units": "44 units"
+    },
+    {
+      "id": 10,
+      "name": "1305 THE DOCK STREET",
+      "days": "5 days",
+      "location": "1010 Kenilworth Avenue, Charlotte, NC",
+      "phone": "phone",
+      "email": "email",
+      "units": "44 units"
+    }
+  ],
+  "PropertiesToReview": [
+    {
+      "id": 1,
+      "name": "1104 Residences",
+      "description": "1104 Spring Path Lane",
+      "location": "Nashville"
+    },
+    {
+      "id": 2,
+      "name": "2000 Linden St",
+      "description": "2000 Linden Street",
+      "location": "Oakland CA"
+    },
+    {
+      "id": 3,
+      "name": "Friar Truck",
+      "description": "Friar Tuck",
+      "location": "Albany, GA"
+    },
+    {
+      "id": 4,
+      "name": "Vilza de la Terrazas",
+      "description": "Vilza de la Terrazas",
+      "location": "Albany, GA"
+    },
+    {
+      "id": 5,
+      "name": "Comanche Wells",
+      "description": "Comanche Wells",
+      "location": "Albany, GA"
+    },
+    {
+      "id": 6,
+      "name": "Generations at West Mesa",
+      "description": "Generations at West Mesa",
+      "location": "Albany, GA"
+    },
+    {
+      "id": 7,
+      "name": "Courtyards Apartments",
+      "description": "Courtyards Apartments",
+      "location": "Albany, GA"
+    },
+    {
+      "id": 8,
+      "name": "Olympus Northpoint",
+      "description": "Olympus Northpoint",
+      "location": "ALBUQUERQUE, NM"
+    }
+  ]
+}
