@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	padding: 10px;
+	border: 0.5px solid grey;
+	box-shadow: 2px 2px 2px 2px grey;
+	margin: 10px;
+}
+
+.snapshot-header {
+	display: flex;
+	gap: 10px;
+	padding: 20px;
+	align-items: center;
+}
+
+.snapshot-btns {
+	display: flex;
+	justify-content: space-between;
+	gap: 0;
+}
+#comps,
+#market {
+	font-size: 12px;
+}
+
+#comps-btn,
+#market-btn {
+	width: 60px;
+	background-color: white;
+	border: 0.3px solid rgb(206, 202, 202);
+	font-size: 13px;
+	padding: 2px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+th {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	padding: 10px 5px;
+	color: grey;
+}
+table,
+td {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	padding: 10px;
+	color: rgb(71, 71, 71);
+}
+
+td {
+	text-align: center;
+}
+td:first-child {
+	text-align: left;
+}
+
+.table-header > div {
+	padding: 3px 5px;
+}
+.table-header-property {
+	font-size: 13px;
+	font-weight: normal;
+	text-align: left;
+	color: blue;
+}
+
+.table-header-region {
+	font-weight: lighter;
+	font-size: 9px;
+	text-align: left;
+	color: grey;
+}
+.table-header-image {
+	width: 150px;
+	margin: 0 auto;
+}
+.property-image {
+	width: 100%;
+}
