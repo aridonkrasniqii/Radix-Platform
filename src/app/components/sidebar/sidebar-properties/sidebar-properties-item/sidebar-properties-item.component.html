@@ -6,7 +6,7 @@
     </button>
 
     <ul class="dropdown-menu" [ngClass]="{'dropdown-menu-open': toggle}">
-        <li style=" font-size: 14px;"><a href="#" style="font-size: 14px; color: white"
+        <li style=" font-size: 14px;"><a href="property-snapshot/{{property.id}}" style="font-size: 14px; color: white"
                 *ngFor="let p of property.property" (mouseenter)="onHover(property)" (mouseout)="onLeave(property)">
                 {{ p }}
             </a></li>

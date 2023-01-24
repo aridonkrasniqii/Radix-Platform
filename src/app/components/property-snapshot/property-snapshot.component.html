@@ -1,106 +1,292 @@
-<div class="container">
+<div class = "property-snapshot">
 
-
-    <div class="property-header">
-        Sedona Apartments
-        Return to original experience
+    <div class="property-header" *ngFor="let p of property.property">
+        <h2>
+            {{ p }}
+        </h2>
+        <h5 id="original-experience">
+            Return to original experience
+        </h5>
     </div>
 
+    <hr style="width: 100%;">
+
+
+    <div class="container">
+
+        <div class="inner-container">
 
 
 
-    <div class="snapshot">
+            <div class="snapshot">
 
 
 
-        <div class="snapshot-header">
-            <div style="font-size:20px;">
-                Snapshot
-            </div>
-
-            <div class='snapshot-btns'>
-                <div id="comps">
-                    <button id="comps-btn">Comps</button>
-                </div>
-                <div id="market">
-                    <button id="market-btn">Market</button>
-                </div>
-            </div>
-        </div>
-
-
-        <table>
-
-            <thead>
-                <th></th>
-                <th>
-                    <div class="table-header">
-                        <div class="table-header-property">
-                            Sedona Apartments
-                        </div>
-                        <div class="table-header-region">
-                            Abilene, TX
-                        </div>
-
-                        <div class="table-header-image">
-                            <img src="property.jpg" alt="Property Image" class="property-image">
-                        </div>
-
+                <div class="snapshot-header">
+                    <div style="font-size:20px;">
+                        <h4>Snapshot</h4>
                     </div>
-                </th>
 
-            </thead>
-
-
-
-            <tbody>
-
-                <tr>
-                    <td>NER</td>
-                    <td>$0.99</td>
-                </tr>
-                <tr>
-                    <td> NER/SQFT</td>
-                    <td>$0.99</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        CONCESSIONS
-                    </td>
-                    <td>$0.99</td>
-                </tr>
-                <tr>
-                    <td>OCCUPANCY %</td>
-                    <td>$0.99</td>
-                </tr>
-                <tr>
-                    <td> LEASED %</td>
-                    <td>$0.99</td>
-                </tr>
+                    <div class='snapshot-btns'>
+                        <div id="comps">
+                            <button id="comps-btn">Comps</button>
+                        </div>
+                        <div id="market">
+                            <button id="market-btn">Market</button>
+                        </div>
+                    </div>
+                </div>
 
 
-                <tr>
+                <table>
+
+                    <thead>
+                        <th></th>
+                        <th>
+                            <div class="table-header">
+                                <div class="table-header-property" *ngFor="let p of property.property">
+                                    {{ p }}
+                                </div>
+                                <div class="table-header-region">
+                                    {{ property.region }}
+                                </div>
+
+                                <div class="table-header-image">
+                                    <img src="{{imageUrl + property.id}}.jpg" alt="Property Image"
+                                        class="property-image">
+                                </div>
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="table-header">
+                                <div class="table-header-property" *ngFor="let p of property.property">
+                                    {{ p }}
+                                </div>
+                                <div class="table-header-region">
+                                    {{ property.region }}
+                                </div>
+
+
+                                <div class="table-header-image">
+                                    <img src="{{imageUrl + property.id}}.jpg" alt="Property Image"
+                                        class="property-image">
+                                </div>
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="table-header">
+                                <div class="table-header-property" *ngFor="let p of property.property">
+                                    {{ p }}
+                                </div>
+                                <div class="table-header-region">
+                                    {{ property.region }}
+                                </div>
+
+
+                                <div class="table-header-image">
+                                    <img src="{{imageUrl + property.id}}.jpg" alt="Property Image"
+                                        class="property-image">
+                                </div>
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="table-header">
+                                <div class="table-header-property" *ngFor="let p of property.property">
+                                    {{ p }}
+                                </div>
+                                <div class="table-header-region">
+                                    {{ property.region }}
+                                </div>
+
+
+                                <div class="table-header-image">
+                                    <img src="{{imageUrl + property.id}}.jpg" alt="Property Image"
+                                        class="property-image">
+                                </div>
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="table-header">
+                                <div class="table-header-property" *ngFor="let p of property.property">
+                                    {{ p }}
+                                </div>
+                                <div class="table-header-region">
+                                    {{ property.region }}
+                                </div>
+
+
+                                <div class="table-header-image">
+                                    <img src="{{imageUrl + property.id}}.jpg" alt="Property Image"
+                                        class="property-image">
+                                </div>
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="table-header">
+                                <div class="table-header-property" *ngFor="let p of property.property">
+                                    {{ p }}
+                                </div>
+                                <div class="table-header-region">
+                                    {{ property.region }}
+                                </div>
+
+
+                                <div class="table-header-image">
+                                    <img src="{{imageUrl + property.id}}.jpg" alt="Property Image"
+                                        class="property-image">
+                                </div>
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="table-header">
+                                <div class="table-header-property" *ngFor="let p of property.property">
+                                    {{ p }}
+                                </div>
+                                <div class="table-header-region">
+                                    {{ property.region }}
+                                </div>
+
+                                <div class="table-header-image">
+                                    <img src="{{imageUrl + property.id}}.jpg" alt="Property Image"
+                                        class="property-image">
+                                </div>
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="table-header">
+                                <div class="table-header-property" *ngFor="let p of property.property">
+                                    {{ p }}
+                                </div>
+                                <div class="table-header-region">
+                                    {{ property.region }}
+                                </div>
+
+
+                                <div class="table-header-image">
+                                    <img src="{{imageUrl + property.id}}.jpg" alt="Property Image"
+                                        class="property-image">
+                                </div>
+
+                            </div>
+                        </th>
+
+                    </thead>
 
 
 
-                    <td>ATR %</td>
-                    <td>$0.99</td>
-                </tr>
-                <tr>
-                    <td>TRAFFIC/WEEK</td>
-                    <td>12</td>
-                </tr>
+                    <tbody>
 
-                <tr>
-                    <td>LEASES/WEEK</td>
-                    <td>5</td>
-                </tr>
-            </tbody>
+                        <tr>
+                            <td>NER</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                        </tr>
+                        <tr>
+                            <td> NER/SQFT</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                        </tr>
 
-        </table>
+                        <tr>
+                            <td>
+                                CONCESSIONS
+                            </td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                        </tr>
+                        <tr>
+                            <td>OCCUPANCY %</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                        </tr>
+                        <tr>
+                            <td> LEASED %</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                        </tr>
 
 
+                        <tr>
+
+
+
+                            <td>ATR %</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                            <td>$0.99</td>
+                        </tr>
+                        <tr>
+                            <td>TRAFFIC/WEEK</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                        </tr>
+
+                        <tr>
+                            <td>LEASES/WEEK</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+            </div>
+
+        </div>
     </div>
-
 </div>

@@ -20,17 +20,27 @@ export class PortfolioSnapshotReviewComponent {
 	) {}
 
 	ngOnInit() {
+		this.getProperties();
+		this.getShownProperty();
+		this.delay();
+	}
+
+	getProperties() {
 		this.snapshotService
 			.getPropertiesToReview()
 			.subscribe((properties: PropertiesToReview[]) => {
 				this.propertiesToReview = properties as PropertiesToReview[];
 				this.propertiesToBeShown = this?.propertiesToReview[0];
 			});
+	}
 
+	getShownProperty() {
 		this.stateService.portfolioSubject.subscribe(index => {
 			this.propertiesToBeShown = this.propertiesToReview[index as any];
 		});
+	}
 
+	delay() {
 		setTimeout(() => {
 			this.shown = true;
 		}, 100);

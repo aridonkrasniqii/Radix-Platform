@@ -15,11 +15,11 @@ export class SidebarPropertiesItemComponent {
 		new EventEmitter<SideBarProperties>();
 	@Output() onLeaveProperty: EventEmitter<SideBarProperties> =
 		new EventEmitter<SideBarProperties>();
+
 	onClick(property: any) {
 		this.toggle = !this.toggle;
 		this.onRegClick.emit(property);
 	}
-
 	onHover(property: any) {
 		this.onHoverProperty.emit(property);
 	}

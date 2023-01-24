@@ -22,6 +22,9 @@ import { SnapshotTableItemComponent } from './components/portfolio/portfolio-sna
 import { SidebarPropertiesTooltipComponent } from './components/sidebar/sidebar-properties/sidebar-properties-tooltip/sidebar-properties-tooltip.component';
 import { PortfolioStateService } from './services/state/portfolio-state.service';
 import { PropertySnapshotComponent } from './components/property-snapshot/property-snapshot.component';
+import { Routes } from '@angular/router';
+import { RouteModule } from './route/route.module';
+
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -42,9 +45,9 @@ import { PropertySnapshotComponent } from './components/property-snapshot/proper
 		SidebarPropertiesItemComponent,
 		SnapshotTableItemComponent,
 		SidebarPropertiesTooltipComponent,
-  PropertySnapshotComponent,
+		PropertySnapshotComponent,
 	],
-	imports: [BrowserModule, HttpClientModule],
+	imports: [BrowserModule, HttpClientModule, RouteModule],
 	providers: [PortfolioStateService],
 	bootstrap: [AppComponent],
 })

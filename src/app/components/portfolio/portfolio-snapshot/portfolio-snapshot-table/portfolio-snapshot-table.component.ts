@@ -15,14 +15,18 @@ export class PortfolioSnapshotTableComponent {
 	) {}
 
 	ngOnInit() {
+		this.getTableData();
+	}
+
+	onClick(data: any) {
+		this.stateService.sendPropertyToReview(data.id);
+	}
+
+	getTableData() {
 		this.snapshotService
 			.getSnapShotTableData()
 			.subscribe((tableData: SnapshotTableData[]) => {
 				this.tableData = tableData as SnapshotTableData[];
 			});
-	}
-
-	onClick(data: any) {
-		this.stateService.sendPropertyToReview(data.id);
 	}
 }
